@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LimitedHQ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="desktop">
+        <!-- My Computer (Not Draggable) -->
+        <div class="desktop-icon fixed-icon" data-window="limitedhq-window" id="icon-limitedhq"
+            style="top: 20px; left: 20px;">
+            <img src="./assets/xp_computer.png" alt="limitedhq" class="xp-icon">
+            <div class="icon-text">limitedhq</div>
+        </div>
+
+        <!-- Draggable Folders -->
+        <div class="desktop-icon draggable-icon" data-window="services-window" id="icon-services"
+            style="top: 120px; left: 20px;">
+            <img src="./assets/xp_folder.png" alt="Services" class="xp-icon folder">
+            <div class="icon-text">Services</div>
+        </div>
+
+        <div class="desktop-icon draggable-icon" data-window="casestudies-window" id="icon-casestudies"
+            style="top: 220px; left: 20px;">
+            <img src="./assets/xp_folder.png" alt="Casestudies" class="xp-icon folder">
+            <div class="icon-text">Casestudies</div>
+        </div>
+
+        <div class="desktop-icon draggable-icon" data-window="contact-window" id="icon-contact"
+            style="top: 320px; left: 20px;">
+            <img src="./assets/xp_folder.png" alt="Contact" class="xp-icon folder">
+            <div class="icon-text">Contact</div>
+        </div>
+
+        <!-- Windows -->
+        <div class="win-window hidden" id="limitedhq-window" style="top: 50px; left: 150px;">
+            <div class="win-titlebar">
+                <div class="win-title">
+                    <img src="./assets/xp_computer.png" alt="limitedhq" class="win-title-icon">
+                    limitedhq
+                </div>
+                <div class="win-controls">
+                    <button class="win-min" data-action="minimize">_</button>
+                    <button class="win-max" data-action="maximize">□</button>
+                    <button class="win-close" data-action="close">✕</button>
+                </div>
+            </div>
+            <div class="win-content">
+                <div class="win-addressbar">
+                    <span class="addressbar-label">Address</span>
+                    <div class="addressbar-path"><img src="./assets/xp_computer.png" class="addressbar-icon">
+                        C:\limitedhq</div>
+                </div>
+                <div class="win-body">
+                    <h3>Welcome to LimitedHQ</h3>
+                    <p>We are a media production company specializing in bringing your stories to life.</p>
+                    <ul style="margin-left: 20px; margin-top: 10px;">
+                        <li>System Type: Premium Media Production</li>
+                        <li>Processor: Highly Creative Minds</li>
+                        <li>Memory (RAM): Endless Ideas</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="win-window hidden" id="services-window" style="top: 80px; left: 180px;">
+            <div class="win-titlebar">
+                <div class="win-title">
+                    <img src="./assets/xp_folder.png" alt="Services" class="win-title-icon">
+                    Services
+                </div>
+                <div class="win-controls">
+                    <button class="win-min" data-action="minimize">_</button>
+                    <button class="win-max" data-action="maximize">□</button>
+                    <button class="win-close" data-action="close">✕</button>
+                </div>
+            </div>
+            <div class="win-content">
+                <div class="win-addressbar">
+                    <span class="addressbar-label">Address</span>
+                    <div class="addressbar-path"><img src="./assets/xp_folder.png" class="addressbar-icon">
+                        C:\limitedhq\services</div>
+                </div>
+                <div class="win-body grid-view">
+                    <div class="file-item"><span class="file-icon">🎙️</span><br>Podcast Production</div>
+                    <div class="file-item"><span class="file-icon">🎬</span><br>Content Production</div>
+                    <div class="file-item"><span class="file-icon">📊</span><br>Content Strategy</div>
+                    <div class="file-item"><span class="file-icon">🚀</span><br>Campaigns</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="win-window hidden" id="casestudies-window" style="top: 110px; left: 210px;">
+            <div class="win-titlebar">
+                <div class="win-title">
+                    <img src="./assets/xp_folder.png" alt="Casestudies" class="win-title-icon">
+                    Casestudies
+                </div>
+                <div class="win-controls">
+                    <button class="win-min" data-action="minimize">_</button>
+                    <button class="win-max" data-action="maximize">□</button>
+                    <button class="win-close" data-action="close">✕</button>
+                </div>
+            </div>
+            <div class="win-content">
+                <div class="win-addressbar">
+                    <span class="addressbar-label">Address</span>
+                    <div class="addressbar-path"><img src="./assets/xp_folder.png" class="addressbar-icon">
+                        C:\limitedhq\casestudies</div>
+                </div>
+                <div class="win-body list-view">
+                    <p>Loading reports...</p>
+                    <p style="margin-top: 10px;"><strong>Let’s build the next case study together.</strong></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="win-window hidden" id="contact-window" style="top: 140px; left: 240px;">
+            <div class="win-titlebar">
+                <div class="win-title">
+                    <img src="./assets/xp_folder.png" alt="Contact" class="win-title-icon">
+                    Contact
+                </div>
+                <div class="win-controls">
+                    <button class="win-min" data-action="minimize">_</button>
+                    <button class="win-max" data-action="maximize">□</button>
+                    <button class="win-close" data-action="close">✕</button>
+                </div>
+            </div>
+            <div class="win-content">
+                <div class="win-addressbar">
+                    <span class="addressbar-label">Address</span>
+                    <div class="addressbar-path"><img src="./assets/xp_folder.png" class="addressbar-icon">
+                        C:\limitedhq\contact</div>
+                </div>
+                <div class="win-body contact-body">
+                    <h3>Get In Touch</h3>
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <label>Name:</label>
+                            <input type="text" id="contact-name" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Email:</label>
+                            <input type="email" id="contact-email" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Contact Number:</label>
+                            <input type="text" id="contact-phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Requirement:</label>
+                            <textarea id="contact-req" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="xp-btn">Submit Request</button>
+                    </form>
+
+                    <hr style="margin: 20px 0;">
+
+                    <div class="direct-contact">
+                        <p><strong>limitedhq</strong></p>
+                        <p>Email: bhargav@limitedhq.com</p>
+                        <p>Number: +91 7013017695</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Start Menu -->
+        <div id="start-menu" class="hidden">
+            <div class="start-header">
+                <div class="user-avatar">
+                    <svg viewBox="0 0 100 100">
+                        <circle cx="50" cy="50" r="45" fill="#ffd166" />
+                        <circle cx="50" cy="40" r="15" fill="#fff" />
+                        <path d="M20,80 C20,60 80,60 80,80" fill="#fff" />
+                    </svg>
+                </div>
+                <span>limitedhq</span>
+            </div>
+            <div class="start-body">
+                <div class="start-left">
+                    <div class="faq-item">
+                        <div class="faq-question">What does limitedhq do? <span class="faq-arrow">►</span></div>
+                        <div class="faq-answer">We are a media production company specializing in content creation,
+                            podcasts, and brand campaigns.</div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">What services do you offer? <span class="faq-arrow">►</span></div>
+                        <div class="faq-answer">Podcast Production, Content Production, Content Strategy, and Campaigns.
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">How can I work with you? <span class="faq-arrow">►</span></div>
+                        <div class="faq-answer">Open the Contact folder and fill out the form, or email us at
+                            bhargav@limitedhq.com</div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">Where are you based? <span class="faq-arrow">►</span></div>
+                        <div class="faq-answer">We work remotely with clients worldwide.</div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">What's your turnaround time? <span class="faq-arrow">►</span></div>
+                        <div class="faq-answer">Depends on the project scope. Typically 1-4 weeks for most deliverables.
+                        </div>
+                    </div>
+                </div>
+                <div class="start-right">
+                    <div class="start-item start-shortcut" data-open="limitedhq-window">
+                        <img src="./assets/xp_computer.png" class="start-item-icon"> limitedhq
+                    </div>
+                    <hr>
+                    <div class="start-item start-shortcut" data-open="services-window">
+                        <img src="./assets/xp_folder.png" class="start-item-icon"> Services
+                    </div>
+                    <div class="start-item start-shortcut" data-open="casestudies-window">
+                        <img src="./assets/xp_folder.png" class="start-item-icon"> Casestudies
+                    </div>
+                </div>
+            </div>
+            <div class="start-footer">
+                <div class="footer-btn start-shortcut" data-open="contact-window">📧 Contact</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Taskbar -->
+    <div id="taskbar">
+        <button id="start-button">
+            <img src="./assets/xp_start.png" class="start-logo" alt="Windows Logo">
+            <span>start</span>
+        </button>
+        <div id="taskbar-apps"></div>
+        <div id="system-tray">
+            <span id="clock">12:00 PM</span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
